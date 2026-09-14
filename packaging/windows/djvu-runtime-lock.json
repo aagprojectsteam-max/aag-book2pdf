@@ -1,0 +1,66 @@
+[
+  {
+    "name": "djvulibre",
+    "version": "3.5.30-1",
+    "binaries": {
+      "url": "https://repo.msys2.org/mingw/mingw64/mingw-w64-x86_64-djvulibre-3.5.30-1-any.pkg.tar.zst",
+      "file": "mingw-w64-x86_64-djvulibre-3.5.30-1-any.pkg.tar.zst",
+      "sha256": "cc9c507ec2c8d40cec4981e31eb458aa139845963e1598b8f1d0220c680af479",
+      "published_digest_checked": true
+    },
+    "source": {
+      "url": "https://repo.msys2.org/mingw/sources/mingw-w64-djvulibre-3.5.30-1.src.tar.zst",
+      "file": "mingw-w64-djvulibre-3.5.30-1.src.tar.zst",
+      "sha256": "f72480c4f49a5083632ea4a1ef29bee0f9e99b5258aac144fa7c6a043ce894ce",
+      "published_digest_checked": false
+    }
+  },
+  {
+    "name": "gcc-libs",
+    "version": "16.2.0-3",
+    "binaries": {
+      "url": "https://repo.msys2.org/mingw/mingw64/mingw-w64-x86_64-gcc-libs-16.2.0-3-any.pkg.tar.zst",
+      "file": "mingw-w64-x86_64-gcc-libs-16.2.0-3-any.pkg.tar.zst",
+      "sha256": "f8e25ea67bb796e7f65550f0dca9fce4cdde8aaa3dadafe4d13c6a8233c8de26",
+      "published_digest_checked": true
+    },
+    "source": {
+      "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-3.src.tar.zst",
+      "file": "mingw-w64-gcc-16.2.0-3.src.tar.zst",
+      "sha256": "eb3479a8b0b23810fbbbc25ef76879e867e88d09960a40145d73f5505fda4da0",
+      "published_digest_checked": false
+    }
+  },
+  {
+    "name": "libjpeg-turbo",
+    "version": "3.2.0-1",
+    "binaries": {
+      "url": "https://repo.msys2.org/mingw/mingw64/mingw-w64-x86_64-libjpeg-turbo-3.2.0-1-any.pkg.tar.zst",
+      "file": "mingw-w64-x86_64-libjpeg-turbo-3.2.0-1-any.pkg.tar.zst",
+      "sha256": "ef3f55cf5238a8045c8f37796d730e4a5ee619d29ca9254aaa62456e5b5b7e51",
+      "published_digest_checked": true
+    },
+    "source": {
+      "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libjpeg-turbo-3.2.0-1.src.tar.zst",
+      "file": "mingw-w64-libjpeg-turbo-3.2.0-1.src.tar.zst",
+      "sha256": "98bfbef730e79ca74c88842eb27730db11429dbae4d95e0f5d7859e316026a74",
+      "published_digest_checked": false
+    }
+  },
+  {
+    "name": "libwinpthread",
+    "version": "14.0.0.r375.g9c1abbbf5-1",
+    "binaries": {
+      "url": "https://repo.msys2.org/mingw/mingw64/mingw-w64-x86_64-libwinpthread-14.0.0.r375.g9c1abbbf5-1-any.pkg.tar.zst",
+      "file": "mingw-w64-x86_64-libwinpthread-14.0.0.r375.g9c1abbbf5-1-any.pkg.tar.zst",
+      "sha256": "1d0ed7fda332a5c879de210f3d72c75fa1f3df7cc63dd951e763dec8eb02c1ee",
+      "published_digest_checked": true
+    },
+    "source": {
+      "url": "https://repo.msys2.org/mingw/sources/mingw-w64-winpthreads-14.0.0.r375.g9c1abbbf5-1.src.tar.zst",
+      "file": "mingw-w64-winpthreads-14.0.0.r375.g9c1abbbf5-1.src.tar.zst",
+      "sha256": "7bf513784ae0bc4f1a413e1f787f7a3ba2bd7ec0503980ea4d17ddf0e4796c87",
+      "published_digest_checked": false
+    }
+  }
+]

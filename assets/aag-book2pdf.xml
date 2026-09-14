@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AAG-BOOK2PDF-MANAGED-V1 -->
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-aag-book">
+    <comment>AAG scanned book container</comment>
+    <comment xml:lang="he">ספר בפורמט BOOK</comment>
+    <glob pattern="*.book" case-sensitive="false"/>
+    <magic priority="60"><match type="string" value="BKC" offset="0"/></magic>
+    <icon name="aag-book2pdf"/>
+  </mime-type>
+</mime-info>

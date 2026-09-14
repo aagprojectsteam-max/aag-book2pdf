@@ -1,0 +1,42 @@
+# Private input and generated document material
+candidate-input/
+private-samples/
+artifacts/
+recovered/
+*_RECOVERED/
+*_PDF/
+TurboSun_*/
+*.book
+*.BOOK
+*.pdf
+*.tif
+*.tiff
+*.sqlite*
+*.mdb
+*.accdb
+*.db
+# Environments, builds and caches
+.venv*/
+venv/
+.build/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage*
+htmlcov/
+# Local state and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.log
+*.jsonl
+*.tmp
+*.tmp.*
+.vscode/
+.idea/
+.DS_Store
