@@ -10,7 +10,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIRS = ('book2pdf', 'packaging', 'scripts', 'tests', 'assets', '.github')
-SOURCE_FILES = ('packaging/windows/djvu-runtime-lock.json', 'pyproject.toml', 'README.md', 'WINDOWS.md', 'ARCHITECTURE.md', 'THIRD_PARTY.md', 'LICENSE', 'CHANGELOG.md', 'CONTRIBUTING.md', 'SECURITY.md', 'RELEASE_PROVENANCE.md', 'install.sh', 'uninstall.sh', '.gitignore')
+SOURCE_FILES = ('packaging/windows/djvu-runtime-lock.json', 'pyproject.toml', 'README.md', 'WINDOWS.md', 'ARCHITECTURE.md', 'THIRD_PARTY.md', 'LICENSE', 'CHANGELOG.md', 'CONTRIBUTING.md', 'SECURITY.md', 'RELEASE_PROVENANCE.md', 'HANDOFF.md', 'install.sh', 'uninstall.sh', '.gitignore')
 PUBLIC_FIXTURES = ('tests/fixtures/bkf-noise.djvu',)
 ALLOWED_SUFFIXES = {'.py', '.ps1', '.spec', '.iss', '.manifest', '.svg', '.yml', '.yaml', '.md'}
 
@@ -72,7 +72,6 @@ def prepare():
     from PIL import Image
     folder = ROOT / '.build'
     folder.mkdir(exist_ok=True)
-    # Convert the existing vector logo; no replacement branding.
     renderer = QSvgRenderer(str(ROOT / 'assets/aag-book2pdf.svg'))
     canvas = QImage(256, 256, QImage.Format.Format_ARGB32)
     canvas.fill(Qt.GlobalColor.transparent)
@@ -89,8 +88,6 @@ def prepare():
     notices.mkdir()
     shutil.copy2(ROOT / 'THIRD_PARTY.md', notices)
     inventory = []
-    # Record exact builder resolution and copy the license/notice files shipped
-    # by runtime wheels, including native libraries' bundled notices.
     for distribution in metadata.distributions():
         name = distribution.metadata['Name']
         if name.lower() in {'pip', 'setuptools', 'wheel'}:
